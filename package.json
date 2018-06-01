@@ -1,0 +1,18 @@
+{
+  "license": "Beerware",
+  "devDependencies": {
+    "lerna": "^2.9.1",
+    "npm-check-updates": "^2.14.1"
+  },
+  "scripts": {
+    "clean": "lerna clean",
+    "setup": "lerna bootstrap",
+    "release": "lerna publish --conventional-commits -m 'chore(release): publish'",
+    "update:check": "ncu -a && lerna exec --concurrency 1 -- ncu",
+    "update:run": "ncu -a && lerna exec --concurrency 1 -- ncu -a && lerna bootstrap && lerna run test"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "private": true
+}
