@@ -1,8 +1,8 @@
 {
   "license": "Beerware",
   "devDependencies": {
-    "lerna": "^2.9.1",
-    "npm-check-updates": "^2.14.1"
+    "lerna": "^2.11.0",
+    "npm-check-updates": "^2.14.2"
   },
   "scripts": {
     "clean": "lerna clean",
