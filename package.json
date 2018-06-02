@@ -8,6 +8,7 @@
     "clean": "lerna clean",
     "setup": "lerna bootstrap",
     "release": "lerna publish --conventional-commits -m 'chore(release): publish'",
+    "test": "lerna run test",
     "update:check": "ncu -a && lerna exec --concurrency 1 -- ncu",
     "update:run": "ncu -a && lerna exec --concurrency 1 -- ncu -a && lerna bootstrap && lerna run test"
   },
