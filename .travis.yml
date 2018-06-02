@@ -1,0 +1,8 @@
+language: node_js
+node_js:
+- "node"
+install:
+  - yarn install
+  - yarn run setup
+script:
+  - yarn run test
